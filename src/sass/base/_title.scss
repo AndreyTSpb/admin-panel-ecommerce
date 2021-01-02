@@ -1,0 +1,21 @@
+.title{
+    font-family: Google Sans;
+    font-style: normal;
+    
+    &__h1{
+        font-weight: bold;
+        font-size: 45px;
+        line-height: 57px;
+    }
+    &__h2{
+        font-size: 32px;
+        font-weight: bold;
+    }
+    &__h3{
+        font-size: 24px;
+        font-weight: bold;
+    }
+    &__h4{
+        font-size: 20px;
+    }
+}
