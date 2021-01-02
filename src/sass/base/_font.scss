@@ -30,7 +30,9 @@
         url('../fonts/GoogleSans-Italic.woff2') format('woff2'),
         url('../fonts/GoogleSans-Italic.woff') format('woff'),
         url('../fonts/GoogleSans-Italic.ttf') format('truetype');
-    font-weight: normal;
+        span{
+            font-weight: bold;
+        }
     font-style: italic;
 }
 

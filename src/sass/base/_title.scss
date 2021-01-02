@@ -3,19 +3,28 @@
     font-style: normal;
     
     &__h1{
-        font-weight: bold;
-        font-size: 45px;
+        font-size: 40px;
         line-height: 57px;
+        span{
+            font-weight: bold;
+        }
     }
     &__h2{
         font-size: 32px;
-        font-weight: bold;
+        span{
+            font-weight: bold;
+        }
     }
     &__h3{
         font-size: 24px;
-        font-weight: bold;
+        span{
+            font-weight: bold;
+        }
     }
     &__h4{
         font-size: 20px;
+        span{
+            font-weight: bold;
+        }
     }
 }

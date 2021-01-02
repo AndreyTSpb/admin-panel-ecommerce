@@ -1,7 +1,7 @@
 aside{
     background-color: $dark-theme-bg;
-    width: 300px;
-    padding: 20px;
+    width: 260px;
+    padding: 20px 10px 20px 20px;
     padding-right: 0;
 
     .logo{
@@ -20,8 +20,8 @@ aside{
         }
     }
     .menu{
-        margin-top: 100px;
-        margin-left: 20px;
+        margin-top: 70px;
+        //margin-left: 20px;
         ul{
             list-style: none;
 
@@ -47,11 +47,20 @@ aside{
                 }
                 /* Для активного меню в текущий момент */
                 &.active{
+
+                    /**
+                    * Через псевдо элементы формируем обрантый радиус
+                    * создаем вкладку с радиусом границы в верхнем левом и нижнем левом углах
+                    */
                     border-top-left-radius: 20px;
                     border-bottom-left-radius: 20px;
                     background-color: $white;
                     color: $main-soft;
                     position: relative;
+                    /**
+                    * Теперь создаем и распологаем наши псевдоэлементы как четверть круга,
+                    * прозрачные, с box-shadow для имитации границ 
+                    */
                     &:after,
                     &:before {
                         content: "";
