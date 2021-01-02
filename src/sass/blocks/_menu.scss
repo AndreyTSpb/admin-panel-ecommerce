@@ -1,6 +1,6 @@
 aside{
     background-color: $dark-theme-bg;
-    width: 320px;
+    width: 300px;
     padding: 20px;
     padding-right: 0;
 
@@ -39,6 +39,7 @@ aside{
                 &:hover{
                     cursor: pointer;
                 }
+
                 img{
                     width: 24px;
                     height: 24px;
@@ -46,9 +47,40 @@ aside{
                 }
                 /* Для активного меню в текущий момент */
                 &.active{
-                    border-radius: 20px;
+                    border-top-left-radius: 20px;
+                    border-bottom-left-radius: 20px;
                     background-color: $white;
                     color: $main-soft;
+                    position: relative;
+                    &:after,
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        height: 20px;
+                        width: 40px;
+                    }
+                    &:after {
+                        right: 0;
+                        bottom: -20px;
+
+                        border-radius: 0 20px 0 0;
+                        -moz-border-radius: 0 20px 0 0;
+                        -webkit-border-radius: 0 20px 0 0;
+
+                        -webkit-box-shadow: 20px 0 0 0 #fff;
+                        box-shadow: 20px 0 0 0 #fff;
+                    }
+                    &:before{
+                        right: 0px;
+                        top: -20px;
+
+                        border-radius: 0 0 20px 0;
+                        -moz-border-radius: 0 0 20px 0;
+                        -webkit-border-radius: 0 0 20px 0;
+
+                        -webkit-box-shadow: 20px 0 0 0 #fff;
+                        box-shadow: 20px 0 0 0 #fff;
+                    }
                 }
             }
         }
