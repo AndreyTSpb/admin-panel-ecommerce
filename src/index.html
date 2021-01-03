@@ -139,7 +139,22 @@
                         </ol>
                     </div>
                     <div class="statistics__sale-statistic">
-                        <img src="img/sales-statistics-chart.png" alt="">
+                        <div class="statistics__sale-statistic-header">
+                            <h4 class="title title__h4">Sales statistics</h4>
+                            <select name="" id="">
+                                <option value="1">Понедельник</option>
+                                <option value="2">Вторник</option>
+                                <option value="3">Среда</option>
+                                <option value="4">Четверг</option>
+                                <option value="5">Пятница</option>
+                                <option value="6">Суббота</option>
+                                <option value="7">Воскресенье</option>
+                            </select>
+                        </div>
+                        <div class="statistics__sale-statistic-body">
+                            <!-- Что бы заработало надо помещать график в canvas -->
+                            <canvas id="myChart"></canvas>
+                        </div>
                     </div>
                     <div class="statistics__unic-visitors">
                         <img src="img/visitors-chart.png" alt="">
@@ -148,5 +163,30 @@
             </main>
         </div>
     </section>
+    <script src="js/Chart.min.js"></script>
+    <script>
+        //Что бы заработало надо помещать график в canvas
+        let ctx = document.getElementById('myChart');
+        let myChart = new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                            labels: ['week 0', 'week 1', 'week 2', 'week 3', 'week 4', 'week 5'],
+                            datasets: [{
+                            label: "Profit",
+                            data: [20, 35, 40, 56, 78, 99],
+                            borderColor: 'rgba(255,229,238,1)',
+                            backgroundColor: '#5840BB',
+                            fill: false
+                        },
+                        {
+                            label: "Order",
+                            data: [10, 15, 20, 36, 38, 49],
+                            borderColor: 'rgba(199,242,255,1)',
+                            backgroundColor: '#5840BB',
+                            fill: false
+                        }]
+                    }
+                });
+    </script>
 </body>
 </html>
