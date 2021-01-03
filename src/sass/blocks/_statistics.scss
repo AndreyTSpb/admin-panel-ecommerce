@@ -1,0 +1,58 @@
+.statistics{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 15px;
+    row-gap: 15px;
+    &__orders,&__profit{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        min-height: 120px;
+        &-img{
+            width: 56px;
+            height: 56px;
+            background: #FFFFFF;
+            border-radius: 15px 5px;
+            position: relative;
+            img{
+                width: 27px;
+                height: 27px;
+                fill: $main-color;
+                position: absolute;
+                top: calc(50% - 14px);
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+    &__orders{
+        border-radius: 50px 10px;
+        background-color: $blue;
+    }
+    &__profit{
+        border-radius: 10px 50px;
+        background-color: $pink;
+    }
+    &__top-salling-products{
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+    &__sale-statistic{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        img{
+            width: 100%;
+        }
+    }
+    &__unic-visitors{
+        img{
+            width: 100%;
+        }
+    }
+}
