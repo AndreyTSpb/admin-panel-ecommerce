@@ -1,7 +1,8 @@
 .title{
     font-family: Google Sans;
     font-style: normal;
-    
+    margin-bottom: 0;
+
     &__h1{
         font-size: 40px;
         line-height: 57px;
@@ -23,6 +24,12 @@
     }
     &__h4{
         font-size: 20px;
+        span{
+            font-weight: bold;
+        }
+    }
+    &__h5{
+        font-size: 18px;
         span{
             font-weight: bold;
         }
