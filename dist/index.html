@@ -1,22 +1,40 @@
-<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><!-- Primary Meta Tags --><title>Admin Panel Ecommerce</title><meta name="title" content="Admin Panel Ecommerce"><meta name="description" content="Admin panel ecomerce"><link rel="stylesheet" href="css/style.min.css"></head><body><section><div class="container"><aside><div class="logo"><img src="icons/smiling-face-1.svg" alt="" srcset=""> LOGO</div><div class="menu"><ul><li class="active"><img src="icons/dashboard.svg" alt="" srcset=""> Dashboard</li><li><img src="icons/orders.svg" alt="" srcset=""> Orders</li><li><img src="icons/products.svg" alt="" srcset=""> Products</li><li><img src="icons/marketing.svg" alt="" srcset=""> Marketing</li><li><img src="icons/rates.svg" alt="" srcset=""> Rates</li><li><img src="icons/reports.svg" alt="" srcset=""> Reports</li></ul></div></aside><main><div class="header"><h1 class="title__h1">Welcome, <span>Damian</span></h1><div class="header__action"><div class="header__action-search"><input type="text" name="search" id="search" placeholder="Search for products..."> <button class="header__action-search-btn"><img src="icons/search.svg" alt="" srcset=""></button></div><div class="header__action-alert"><button class="header__action-alert-btn"><img src="icons/notifications.svg" alt=""></button></div><div class="header__action-photo"><img src="img/avatar-1.png" alt=""></div></div></div><div class="statistics"><div class="statistics__orders"><div class="statistics__orders-img"><img src="icons/orders2.svg" alt=""></div><div class="statistics__orders-name"><h2 class="title title__h4"><span>23 789</span></h2><p>orders</p></div><div class="statistics__orders-badge">+23</div></div><div class="statistics__profit"><div class="statistics__profit-img"><img src="icons/profit.svg" alt=""></div><div class="statistics__profit-name"><h2 class="title title__h4"><span>$ 12 890,89</span></h2><p>profit</p></div><div class="statistics__profit-badge">+544</div></div><div class="statistics__top-salling-products"><div class="statistics__top-salling-products-header"><h4 class="title title__h4"><span>Top selling products</span></h4><a href="#">See all ></a></div><ol class="statistics__top-salling-products-items"><li><div class="statistics__top-salling-products-items-img"><img src="img/tshirt.png" alt=""></div><div class="statistics__top-salling-products-items-item"><h5 class="title title__h5">Tshirt Levis</h5><h4 class="title title__h4"><span>$ 49,99</span></h4></div></li><li><div class="statistics__top-salling-products-items-img"><img src="img/jacket.png" alt=""></div><div class="statistics__top-salling-products-items-item"><h5 class="title title__h5">Long jeans jacket</h5><h4 class="title title__h4"><span>$ 129,99</span></h4></div></li><li><div class="statistics__top-salling-products-items-img"><img src="img/cap.png" alt=""></div><div class="statistics__top-salling-products-items-item"><h5 class="title title__h5">Fullcap</h5><h4 class="title title__h4"><span>$ 20,99</span></h4></div></li><li><div class="statistics__top-salling-products-items-img"><img src="img/adidas.png" alt=""></div><div class="statistics__top-salling-products-items-item"><h5 class="title title__h5">Adidas pants</h5><h4 class="title title__h4"><span>$ 89,99</span></h4></div></li></ol></div><div class="statistics__sale-statistic"><div class="statistics__sale-statistic-header"><h4 class="title title__h4">Sales statistics</h4><select name="" id=""><option value="1">Понедельник</option><option value="2">Вторник</option><option value="3">Среда</option><option value="4">Четверг</option><option value="5">Пятница</option><option value="6">Суббота</option><option value="7">Воскресенье</option></select></div><div class="statistics__sale-statistic-body"><!-- Что бы заработало надо помещать график в canvas --><canvas id="myChart"></canvas></div></div><div class="statistics__unic-visitors"><img src="img/visitors-chart.png" alt=""></div></div></main></div></section><script src="js/Chart.min.js"></script><script>//Что бы заработало надо помещать график в canvas
+<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><!-- Primary Meta Tags --><title>Admin Panel Ecommerce</title><meta name="title" content="Admin Panel Ecommerce"><meta name="description" content="Admin panel ecomerce"><link rel="stylesheet" href="css/style.min.css"></head><body><section><div class="container"><aside><div class="logo"><img src="icons/smiling-face-1.svg" alt="" srcset=""> LOGO</div><div class="menu"><ul><li class="active"><img src="icons/dashboard.svg" alt="" srcset=""> Dashboard</li><li><img src="icons/orders.svg" alt="" srcset=""> Orders</li><li><img src="icons/products.svg" alt="" srcset=""> Products</li><li><img src="icons/marketing.svg" alt="" srcset=""> Marketing</li><li><img src="icons/rates.svg" alt="" srcset=""> Rates</li><li><img src="icons/reports.svg" alt="" srcset=""> Reports</li></ul></div></aside><main><div class="header"><h1 class="title__h1">Welcome, <span>Damian</span></h1><div class="header__action"><div class="header__action-search"><input type="text" name="search" id="search" placeholder="Search for products..."> <button class="header__action-search-btn"><img src="icons/search.svg" alt="" srcset=""></button></div><div class="header__action-alert"><button class="header__action-alert-btn"><img src="icons/notifications.svg" alt=""></button></div><div class="header__action-photo"><img src="img/avatar-1.png" alt=""></div></div></div><div class="statistics"><div class="statistics__orders"><div class="statistics__orders-img"><img src="icons/orders2.svg" alt=""></div><div class="statistics__orders-name"><h2 class="title title__h4"><span>23 789</span></h2><p>orders</p></div><div class="statistics__orders-badge">+23</div></div><div class="statistics__profit"><div class="statistics__profit-img"><img src="icons/profit.svg" alt=""></div><div class="statistics__profit-name"><h2 class="title title__h4"><span>$ 12 890,89</span></h2><p>profit</p></div><div class="statistics__profit-badge">+544</div></div><div class="statistics__top-salling-products"><div class="statistics__top-salling-products-header"><h4 class="title title__h4"><span>Top selling products</span></h4><a href="#">See all ></a></div><ol class="statistics__top-salling-products-items"><li><div class="statistics__top-salling-products-items-img"><img src="img/tshirt.png" alt=""></div><div class="statistics__top-salling-products-items-item"><h5 class="title title__h5">Tshirt Levis</h5><h4 class="title title__h4"><span>$ 49,99</span></h4></div></li><li><div class="statistics__top-salling-products-items-img"><img src="img/jacket.png" alt=""></div><div class="statistics__top-salling-products-items-item"><h5 class="title title__h5">Long jeans jacket</h5><h4 class="title title__h4"><span>$ 129,99</span></h4></div></li><li><div class="statistics__top-salling-products-items-img"><img src="img/cap.png" alt=""></div><div class="statistics__top-salling-products-items-item"><h5 class="title title__h5">Fullcap</h5><h4 class="title title__h4"><span>$ 20,99</span></h4></div></li><li><div class="statistics__top-salling-products-items-img"><img src="img/adidas.png" alt=""></div><div class="statistics__top-salling-products-items-item"><h5 class="title title__h5">Adidas pants</h5><h4 class="title title__h4"><span>$ 89,99</span></h4></div></li></ol></div><div class="statistics__sale-statistic"><div class="statistics__sale-statistic-header"><h4 class="title title__h4">Sales statistics</h4><select name="" id=""><option value="1">Понедельник</option><option value="2">Вторник</option><option value="3">Среда</option><option value="4">Четверг</option><option value="5">Пятница</option><option value="6">Суббота</option><option value="7">Воскресенье</option></select></div><div class="statistics__sale-statistic-body"><!-- Что бы заработало надо помещать график в canvas --><canvas id="myChart"></canvas></div></div><div class="statistics__unic-visitors"><div class="statistics__unic-visitors-header"><h4 class="title title__h6"><span>Unique visitors</span></h4><select name="period" id=""><option value="1">weekly</option><option value="1">monthly</option><option value="1">yearly</option></select></div><div class="statistics__unic-visitors-body"><canvas id="myChart2"></canvas></div></div></div></main></div></section><script src="js/Chart.min.js"></script><script>//Что бы заработало надо помещать график в canvas
         let ctx = document.getElementById('myChart');
         let myChart = new Chart(ctx, {
                     type: 'line',
                     data: {
                             labels: ['week 0', 'week 1', 'week 2', 'week 3', 'week 4', 'week 5'],
                             datasets: [{
-                            label: "Profit",
-                            data: [20, 35, 40, 56, 78, 99],
-                            borderColor: 'rgba(255,229,238,1)',
-                            backgroundColor: '#5840BB',
-                            fill: false
-                        },
-                        {
-                            label: "Order",
-                            data: [10, 15, 20, 36, 38, 49],
-                            borderColor: 'rgba(199,242,255,1)',
-                            backgroundColor: '#5840BB',
-                            fill: false
-                        }]
+                                label: "Order",
+                                data: [10, 15, 20, 36, 38, 49],
+                                borderColor: 'rgba(199,242,255,1)',
+                                backgroundColor: '#5840BB',
+                                fill: false
+                            },
+                            {
+                                label: "Profit",
+                                data: [20, 35, 40, 56, 78, 99],
+                                borderColor: 'rgba(255,229,238,1)',
+                                backgroundColor: '#5840BB',
+                                fill: false
+                            }]
                     }
-                });</script></body></html>
+                });
+        /* Второй график */
+        let ctx_2 = document.getElementById('myChart2');
+        if(ctx_2 != null){
+            let myChart2 = new Chart(ctx_2, {
+                type: 'line', // тип графика
+                data: {
+                    //данные для графика
+                    labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'], //метки оси координат
+                    datasets: [{
+                        label: "Visitors", // название графика
+                        data: [44, 25, 37, 34, 30, 41, 36], // значения для каждой метки графика
+                        borderColor: '#5840BB', //Цвет графика
+                        backgroundColor: '#584BB', //Цвет точек
+                        fill: false //отключена заливка
+                    }]
+                }
+            });
+        }</script></body></html>

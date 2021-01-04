@@ -157,7 +157,17 @@
                         </div>
                     </div>
                     <div class="statistics__unic-visitors">
-                        <img src="img/visitors-chart.png" alt="">
+                        <div class="statistics__unic-visitors-header">
+                            <h4 class="title title__h6"><span>Unique visitors</span></h4>
+                            <select name="period" id="">
+                                <option value="1">weekly</option>
+                                <option value="1">monthly</option>
+                                <option value="1">yearly</option>
+                            </select>
+                        </div>
+                        <div class="statistics__unic-visitors-body">
+                            <canvas id="myChart2"></canvas>
+                        </div>
                     </div>
                 </div>
             </main>
@@ -172,21 +182,39 @@
                     data: {
                             labels: ['week 0', 'week 1', 'week 2', 'week 3', 'week 4', 'week 5'],
                             datasets: [{
-                            label: "Profit",
-                            data: [20, 35, 40, 56, 78, 99],
-                            borderColor: 'rgba(255,229,238,1)',
-                            backgroundColor: '#5840BB',
-                            fill: false
-                        },
-                        {
-                            label: "Order",
-                            data: [10, 15, 20, 36, 38, 49],
-                            borderColor: 'rgba(199,242,255,1)',
-                            backgroundColor: '#5840BB',
-                            fill: false
-                        }]
+                                label: "Order",
+                                data: [10, 15, 20, 36, 38, 49],
+                                borderColor: 'rgba(199,242,255,1)',
+                                backgroundColor: '#5840BB',
+                                fill: false
+                            },
+                            {
+                                label: "Profit",
+                                data: [20, 35, 40, 56, 78, 99],
+                                borderColor: 'rgba(255,229,238,1)',
+                                backgroundColor: '#5840BB',
+                                fill: false
+                            }]
                     }
                 });
+        /* Второй график */
+        let ctx_2 = document.getElementById('myChart2');
+        if(ctx_2 != null){
+            let myChart2 = new Chart(ctx_2, {
+                type: 'line', // тип графика
+                data: {
+                    //данные для графика
+                    labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'], //метки оси координат
+                    datasets: [{
+                        label: "Visitors", // название графика
+                        data: [44, 25, 37, 34, 30, 41, 36], // значения для каждой метки графика
+                        borderColor: '#5840BB', //Цвет графика
+                        backgroundColor: '#584BB', //Цвет точек
+                        fill: false //отключена заливка
+                    }]
+                }
+            });
+        }
     </script>
 </body>
 </html>

@@ -2,36 +2,29 @@
     font-family: Google Sans;
     font-style: normal;
     margin-bottom: 0;
+    span{
+        font-weight: bold;
+    }
 
     &__h1{
         font-size: 40px;
         line-height: 57px;
-        span{
-            font-weight: bold;
-        }
     }
     &__h2{
         font-size: 32px;
-        span{
-            font-weight: bold;
-        }
     }
     &__h3{
         font-size: 24px;
-        span{
-            font-weight: bold;
-        }
     }
     &__h4{
         font-size: 20px;
-        span{
-            font-weight: bold;
-        }
     }
     &__h5{
-        font-size: 18px;
-        span{
-            font-weight: bold;
-        }
+        font-size: 16px;
+        
+    }
+    &__h6{
+        font-size: 12px;
+
     }
 }
