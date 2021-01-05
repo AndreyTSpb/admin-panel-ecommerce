@@ -5,6 +5,8 @@
 @import 'base/variable';
 @import 'base/title';
 @import 'base/forms';
+@import 'base/table';
+@import 'base/data_tables';
 
 * {
     font-family: 'Google Sans', sans-serif;
@@ -42,3 +44,4 @@ main{
 @import 'blocks/menu';
 @import 'blocks/header';
 @import 'blocks/statistics';
+@import 'blocks/orders';

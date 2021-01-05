@@ -1,0 +1,69 @@
+/*
+    Стилизация сортировшика HTML таблиц (jQuerydataTables)
+*/
+.dataTables_wrapper{
+    font-family: Google Sans;
+    font-style: normal;
+    font-size: 15px;
+
+    //Обертка для таблицы
+    .dataTables_length{
+        //менюшка для выбра количества отображаемых записей на странице
+        label{
+            font-weight: bold;
+            font-size: 14px;
+        }
+        select{
+            font-size: 14px;
+            border: 1px solid $light;
+            border-radius: 20px 5px;
+            padding: 5px 15px;
+        }
+    }
+    .dataTables_filter{
+        //Поиск по таблице
+        label{
+            font-weight: bold;
+            font-size: 14px;
+        }
+        input{
+            font-size: 14px;
+            border: 1px solid $light;
+            border-radius: 20px 5px;
+            padding: 5px 15px;
+        }
+    }
+    table.dataTable{
+        thead th, thead td{
+            border: none;
+            text-transform: capitalize;
+        }
+    }
+    .dataTables_info{
+        //количество отображенных строк
+        font-weight: bold;
+        font-size: 14px;
+        color: $main-color;
+    }
+    .dataTables_paginate{
+        //пагинация
+        font-weight: bold;
+        font-size: 14px;
+        a{
+            color: $main-color;
+        }
+        .paginate_button.current{
+            font-size: 14px;
+            border: 1px solid $light;
+            border-radius: 15px 5px;
+            padding: 7px 14px;
+            background: $secondary-soft;
+            color: $main-color !important;
+            &:hover{
+                background: $secondary;
+                //font-weight: bold;
+                color: $white !important;
+            }
+        }
+    }
+}
