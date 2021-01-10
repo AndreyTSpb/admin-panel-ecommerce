@@ -1,0 +1,10 @@
+.products{
+    &__list{
+        border: 1px solid $light;
+        border-radius: 50px 5px;
+        width: 100%;
+        padding: 30px 20px;
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+}

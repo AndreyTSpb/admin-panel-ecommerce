@@ -52,11 +52,19 @@
         a{
             color: $main-color;
         }
-        .paginate_button.current{
+        .paginate_button{
             font-size: 14px;
-            border: 1px solid $light;
             border-radius: 15px 5px;
             padding: 7px 14px;
+            &:hover{
+                border: 1px solid $light;
+                background: $secondary;
+                //font-weight: bold;
+                color: $white !important;
+            }
+        }
+        .paginate_button.current{
+            border: 1px solid $light;
             background: $secondary-soft;
             color: $main-color !important;
             &:hover{

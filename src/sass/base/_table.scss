@@ -18,6 +18,13 @@
             &:nth-child(even){
                 background-color: $light;
             }
+            td{
+                text-align: center;
+                img{
+                    width: 44px;
+                    height: 44px;
+                }
+            }
         }
     }
 }
