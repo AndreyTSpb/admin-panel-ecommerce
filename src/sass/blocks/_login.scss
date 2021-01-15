@@ -1,0 +1,32 @@
+.login{
+    background-color: $dark-theme-bg;
+    height: 100vh;
+    position: relative;
+
+    &__form{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: calc(50% - 160px);
+        width: 320px;
+        min-height: 200px;
+        background-color: $white;
+        margin: 0 auto;
+        //background: #C7F2FF;
+        border-radius: 50px 10px;
+        padding: 30px;
+        text-align: center;
+        h2{
+            text-transform: uppercase;
+        }
+        input{
+            font-size: 16px;
+            padding: 16px 20px;
+            margin: 10px;
+        }
+        &-year{
+            margin-top: 20px;
+            text-align: center;
+        }
+    }
+}
