@@ -110,6 +110,11 @@
         &-header{
             display: flex;
             justify-content: space-between;
+            select{
+                border: 1px solid #F3F6FF;
+                border-radius: 20px 5px;
+                padding: 8px 15px;
+            }
         }
         &-body{
             border-top: 1px solid $light;
@@ -129,6 +134,8 @@
             display: flex;
             justify-content: space-between;
             select{
+                border: 1px solid #F3F6FF;
+                border-radius: 20px 5px;
                 padding: 5px 10px;
                 font-size: 12px;
             }
